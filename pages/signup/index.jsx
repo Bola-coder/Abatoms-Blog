@@ -10,7 +10,7 @@ const Signup = () => {
     console.log(formik);
   });
   return (
-    <section className="w-7/12 m-auto h-[47vw] lg:h-[42vw] bg-slate-800 mt-7">
+    <section className="w-7/12 m-auto h-[80vh] bg-slate-800 mt-7">
       {/* <div className="basis-1/3 h-full w-full">
         <Image
           src={SignupBg}

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Login = () => {
   return (
-    <section className="w-7/12 m-auto h-[38vw] lg:h-[33vw] bg-slate-800 mt-7">
+    <section className="w-7/12 m-auto h-[60vh] bg-slate-800 mt-7">
       {/* <div className="basis-1/3 h-full w-full">
         <Image
           src={SignupBg}

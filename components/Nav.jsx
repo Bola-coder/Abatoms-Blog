@@ -1,7 +1,8 @@
 import Link from "next/link";
 const Nav = () => {
   return (
-    <nav className="flex items-center justify-between p-3 text-green-400">
+    // <div className="fixed z-10 top-0  w-full">
+    <nav className="flex items-center justify-between p-3 text-green-400 w-full">
       <h2 className="font-bold text-2xl">
         Bloga<span className="text-white">Land</span>
       </h2>
@@ -15,6 +16,7 @@ const Nav = () => {
         </Link>
       </div>
     </nav>
+    // </div>
   );
 };
 
