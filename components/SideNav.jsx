@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import { FaSearch, FaPlusCircle, FaHome } from "react-icons/fa";
 const SideNav = () => {
   return (
-    <div className="flex flex-col w-5/12 h-[95vh] border-green-400 border-r-2 fixed w-[7vw]">
+    <div className="flex flex-col h-[95vh] border-green-400 border-r-2 fixed w-[7vw]">
       <div className="basis-3/5">
         <div className="p-3 bg-green-400 w-7/12 rounded-full text-center mt-5 cursor-pointer">
           <h3 className="text-xl font-bold">S</h3>
