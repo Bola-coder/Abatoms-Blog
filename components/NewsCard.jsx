@@ -3,13 +3,13 @@ import React from "react";
 const NewsCard = () => {
   return (
     <div className="flex flex-row w-11/12">
-      <div className="basis-1/8 ">
+      <div className="basis-1/6 ">
         <h2 className="text-white-300 text-2xl font-bold tracking-wide mb-5">
           27 <br /> May
         </h2>
-        <p className="">@samurai2019</p>
+        <p className="text-green-300 font-bold w-3/4">@samurai2019</p>
       </div>
-      <div className="basis-7/8">
+      <div className="basis-5/6">
         <h2 className="text-green-300 text-2xl font-bold tracking-wide mb-3">
           15 Disadvantages Of Freedom And How You Can Work Around It.
         </h2>

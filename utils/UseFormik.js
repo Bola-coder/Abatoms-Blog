@@ -8,7 +8,7 @@ const UseFormik = () => {
       email: "",
       password: "",
     },
-    validationSchema: {
+    validationSchema: Yup.object().shape({
       email: Yup.string()
         .label("Email")
         .email("Please provide a valid email address")
@@ -20,7 +20,7 @@ const UseFormik = () => {
       passwordConfirm: Yup.string()
         .label("Password")
         .required("This is a required field"),
-    },
+    }),
     onSubmit: (values, { resetForm }) => {
       alert("Form successfully submitted", values);
       resetForm();

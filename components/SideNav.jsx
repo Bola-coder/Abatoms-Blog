@@ -5,14 +5,14 @@ const SideNav = () => {
   return (
     <div className="flex flex-col w-5/12 h-[95vh] border-green-400 border-r-2 fixed w-[7vw]">
       <div className="basis-3/5">
-        <div className="p-3 bg-green-400 w-7/12 rounded-full text-center mt-5">
+        <div className="p-3 bg-green-400 w-7/12 rounded-full text-center mt-5 cursor-pointer">
           <h3 className="text-xl font-bold">S</h3>
         </div>
-        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center mt-5">
+        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center cursor-pointer">
           <FaSearch className="text-2xl text-green-400" />
           <p>Search</p>
         </div>
-        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center mt-5 ">
+        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center cursor-pointer ">
           {/* <FaArrow className="text-2xl text-green-400" /> */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,11 +32,11 @@ const SideNav = () => {
         </div>
       </div>
       <div className="basis-2/5">
-        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center mt-5">
+        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center cursor-pointer">
           <FaPlusCircle className="text-2xl text-green-400" />
           <p>Create</p>
         </div>
-        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center mt-5">
+        <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center cursor-pointer">
           <FaHome className="text-2xl text-green-400" />
           <p>Home</p>
         </div>

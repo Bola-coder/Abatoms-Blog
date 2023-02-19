@@ -1,24 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import UseFormik from "../../utils/UseFormik";
-// import Image from "next/image";
-// import SignupBg from "./../../assets/signup_bg.svg";
 
 const Signup = () => {
   const { formik } = UseFormik();
-  useEffect(() => {
-    console.log(formik);
-  });
+
   return (
     <section className="w-7/12 m-auto h-[80vh] bg-slate-800 mt-7">
-      {/* <div className="basis-1/3 h-full w-full">
-        <Image
-          src={SignupBg}
-          alt="alt for signup"
-          height={640}
-          className="object-cover"
-        />
-      </div> */}
       <div className="basis-2/3 h-full px-12">
         {formik.touched.email && formik.errors.email && (
           <p className="text-red-500">{formik.errors.email}</p>
@@ -29,7 +17,10 @@ const Signup = () => {
             Let&apos;s sign you up quickly
           </p>
         </div>
-        <form className="mx-4 flex flex-col w-10/12">
+        <form
+          className="mx-4 flex flex-col w-10/12"
+          onSubmit={formik.handleSubmit}
+        >
           <div className="mb-5 w-11/12 bg-red-900">
             <input
               type="text"
@@ -69,7 +60,7 @@ const Signup = () => {
           </div>
           <div className="mb-5 w-11/12 bg-red-900">
             <input
-              type="text"
+              type="password"
               placeholder="Confirm Password"
               autoFocus={false}
               onChange={formik.handleChange}
@@ -80,7 +71,10 @@ const Signup = () => {
             />
           </div>
           <div className="flex w-11/12 justify-between">
-            <button className="p-2 px-5 border-2 rounded-sm border-green-400 text-slate-800 bg-green-400 w-4/12 font-bold text-2xl tracking-wide hover:bg-green-500">
+            <button
+              className="p-2 px-5 border-2 rounded-sm border-green-400 text-slate-800 bg-green-400 w-4/12 font-bold text-2xl tracking-wide hover:bg-green-500"
+              type="submit"
+            >
               SUBMIT
             </button>
             <p className="p-1">
