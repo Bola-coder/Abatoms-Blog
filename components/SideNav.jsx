@@ -8,7 +8,7 @@ const SideNav = () => {
     >
       <div className="basis-3/5 md:basis-4/5 md:flex">
         <div className="p-3 bg-green-400 w-10/12 rounded-full text-center mt-5 cursor-pointer md:w-12 md:h-12  md:mt-2 md:ml-4">
-          <h3 className="text-xl font-bold">S</h3>
+          <h3 className="text-xl font-bold">B</h3>
         </div>
         <div className="flex flex-col justify-center items-center mt-9 w-7/12 text-center cursor-pointer md:mt-0">
           <FaSearch className="text-2xl text-green-400" />
